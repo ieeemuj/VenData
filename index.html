@@ -4,46 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>VenData</title>
   </head>
   <body>
     <header class="bg-dark text-light text-center py-4">
-      <div class="header-content">
-        <div class="header-left">
-          <h1 class="heroes-heading">
+      <div class="header-content flex md:grid md:grid-cols-3">
+        <div class="hidden md:flex mr-auto header-right">
+          <img id="ieee" src="assets/ieeesbmuj.png" alt="IEEE SB MUJ" />
+        </div>
+        <div>
+          <p class="text-center m-auto font-bold text-4xl justify-self-center">
             <span style="color: #fff">VEN</span
             ><span style="color: #e61a2d">DATA</span>
-          </h1>
+          <p/>
         </div>
-        <div class="header-right">
+        <div class="hidden md:flex ml-auto header-right">
           <img id="ono" src="assets/oneiros.png" alt="Oeiros Logo" />
-          <span class="header-divider">X</span>
-          <img id="ieee" src="assets/ieeesbmuj.png" alt="IEEE SB MUJ" />
         </div>
       </div>
     </header>
     <div class="container main-content">
       <img src="assets/vendata.jpg" alt="Vendata Poster" class="poster-image" />
-      <div class="heroes">
+      <!-- <div class="heroes">
         <!-- <h4 class="heroes-subheading">21st-23rd Feb'24</h4>
         <h2 class="heroes-prize">PRIZE POOL</h2>
         <h2 class="heroes-amount">Rs. 40,000</h2> -->
-        <p class="heroes-description">
+      <!-- <p class="heroes-description">
           Join Onerios and IEEE SB MUJ for a cutting-edge hackathon. <br />
           Train and present your very own mini Chat-GPT on the provided dataset.
           <br />
           Showcase your skills and compete for exciting rewards! <br />
           Be part of this thrilling experience!
-        </p>
-      </div>
-
-      <div class="resources">
-        <h2>Resources</h2>
-        <ul>
-          <li>Coming Soon...</li>
-        </ul>
-      </div>
+        </p> -->
     </div>
+
+    <div class="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li>
+          Problem Statement:
+          <a class="text-blue-400" href="./assets/PS-VenData.pdf">Click Here</a>
+        </li>
+        <li>
+          Guide Book:
+          <a class="text-blue-400" href="./assets/GB-VenData.pdf">Click Here</a>
+        </li>
+        <li>
+          Review Paper Format:
+          <a class="text-blue-400" href="./assets/RPF-VenData.pdf"
+            >Click Here</a
+          >
+        </li>
+      </ul>
+    </div>
+
     <footer>
       <p>
         © 2024
